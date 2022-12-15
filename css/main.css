@@ -1,0 +1,26 @@
+.home{
+    background-image: url(../images/Wave-100s-1366px\ \(2\).svg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+ .bg{
+    background-color: #653383;
+ }
+h2{
+    color:#653383;
+    background-color: rgb(241, 239, 239);
+    font-size: 55px;
+}
+
+ .header-quiz{
+    background-color: rgb(241, 239, 239);
+ }
+ .alert{
+     display: none;
+ } 
+  #quiz,#finish,#Correct,#inCorrect
+{
+    display: none;
+    
+}

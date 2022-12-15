@@ -1,0 +1,108 @@
+    <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz app</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="home py-5 ">
+<section  id="setting" class="setting pb-3">
+<div class=" bg-white  w-50 m-auto shadow-lg  rounded-lg">
+     <h2 class="py-5 text-center border-bottom">Setting Your Quiz</h2>
+     <div class="p-4">
+        <div class="form-group pb-2">
+            <label  for="category" class="text-spec pb-2">Category</label>
+        <select id="category"  class="form-select" aria-label="Default select example" name="Category">
+            <option value="9">General Knowledge</option>
+            <option value="27">Animals</option>
+            <option value="15">Video Games</option>
+            <option value="23">History</option>
+            <option value="21">Sports</option>
+            <option value="18">Science: Computers</option>
+          </select>
+     </div>
+   <div class="py-2">
+      
+        <label for="difficulty" class="text-spec pb-2">Difficulty</label>
+        <div id="difficulty"></div>
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="Difficulty" id="Easy" value="easy">
+        <label class="form-check-label" for=" Easy">
+        Easy
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="Difficulty" id="Medium" value="medium">
+        <label class="form-check-label" for="flexRadioDefault1">
+      Medium
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="Difficulty" id=" Hard" value=" hard">
+       Hard
+        </label>
+      </div>
+   
+      </div>
+   <div class="form-group pb-4 ">
+        <input type="number"  class="form-control" id="number"   placeholder="Number Of questions" required>
+   </div>
+   <!-- <button type="button" class="  btn float-right  py-2 px-4  rounded-pill text-white my-4"> Start </button> -->
+   <button id="startBtn" class=" btn float-end py-2 px-4  bg  rounded-pill text-white my-4">Start
+  </button>
+   <div class="clearfix"></div>
+</div>
+</section>
+<section id="quiz" >
+  <div  class=" bg-white  w-50 m-auto shadow-lg  rounded-lg">
+    <div class="header-quiz border-bottom py-2">
+    <h2 class="text-center  pb-2 "> Quiz</h2>
+    <span class="rounded-pill text-white bg py-2 px-4 float-end mx-2 "> <span id="mumofquestinn"></span> of Question 
+    <span id="num">
+      
+       </span>  
+     </span>
+    <span id="inCorrect" class="btn btn-danger float-left">InCorrect</span>
+    <span id="Correct" class="btn btn-success float-left">Correct</span>
+    <div class="clearfix"></div>
+
+  </div>
+  <div class="p-4 text-spec">
+    <h5 class="d-inline">Q: </h5>
+    <h5 id="question" class="d-inline"></h5>
+    <div id="rowAnswer">
+    
+    </div>
+    <div class="alert alert-danger mt-3">Please Choose Your Answer</div>
+    <button class="btn float-end py-2 px-4 bg rounded-pill text-white my-4" id="next">Submit</button>
+    <div class="clearfix"></div>
+</div>
+</div>
+  
+</section>
+<section id="finish">
+  <div class="bg-white w-50 m-auto shadow-lg rounded overflow-auto text-center">
+      <h1 class=" text-spec py-5 bg-light border-bottom">fininsh</h1>
+      <div class="p-4">
+          <h4 class=" text-spec">score</h4>
+          <h3 class=" text-spec" id="score"></h3>
+          <button class="btn float-right py-2 px-4 bg rounded-pill text-white my-4" id="tryBtn">Try
+              Again?</button>
+      </div>
+  </div>
+</section>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+
+
+</body></html>
